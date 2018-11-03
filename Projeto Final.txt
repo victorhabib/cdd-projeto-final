@@ -1,0 +1,22 @@
+distribuição das idades dos jogadores
+
+
+habilidades x habilidades (heatmap correlation)
+
+
+habilidade x valor de mercado (scatterplot)
+
+
+habilidades por posição: overall x habilidades (histograma, distribuição das habilidades) 
+ex: fazer uma distribuição do overall dos jogadores com posição e habilidade definidas 
+
+potencial x idade
+
+
+(potencial - overall) - (valor de mercado)
+
+30 anos - 100mi - 89 - 89
+20 anos - 120mi - 86 - 91
+
+posição x valor de mercado
+
