@@ -1,22 +1,101 @@
-distribuição das idades dos jogadores
+O QUE FAZER
 
 
-habilidades x habilidades (heatmap correlation)
+distribuição das idades dos jogadores -----> feito
 
 
-habilidade x valor de mercado (scatterplot)
+habilidades x habilidades (heatmap correlation) ------> feito
 
+
+habilidades x posição (heatmap correlation)
+
+
+overall x valor de mercado (scatterplot) ----> dando erro
 
 habilidades por posição: overall x habilidades (histograma, distribuição das habilidades) 
 ex: fazer uma distribuição do overall dos jogadores com posição e habilidade definidas 
 
-potencial x idade
+potencial de evolução x idade -------> feito
 
 
-(potencial - overall) - (valor de mercado)
+overall x idade -------> feito
+
+
+(evolução) x valor de mercado
 
 30 anos - 100mi - 89 - 89
 20 anos - 120mi - 86 - 91
 
 posição x valor de mercado
+#fazer um programa ou funcao que separa os termos por espaço em cada linha da coluna Preferred Positions, depois selecionar o 
+#primeiro termo e deletar o resto (de 2 a 3 caracteres) ----------- EX: ST RM ---função---> ST // CAM RM LM ---função---> CAM 
+
+
+distribuição overall -------> feito
+
+
+
+relacao entre posicao (regiao do campo) e valor de mercado
+
+______________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________
+
+
+ANÁLISE EXPLORATÓRIA
+
+1. limpar o dataset -------------------------------------------------------------------------------------------------------------------------------------------> check
+	- manter:
+		*skills
+		*overall
+		*potential
+		*age
+		*value
+	- tirar:
+		*Unnamed: 0
+		*Name
+		*Photo
+		*Nationality
+		*Flag
+		*Club
+		*Club Logo
+		*Special
+		*ID
+2. fazer as alterações necessárias ---------------------------------------------------------------------------------------------------------------------------> check
+	-value
+		*transformar a coluna value em número
+	-potential
+		*transformar a coluna potential em evolução (overall - potential)
+	-skills
+		*transformar as colunas skills em números
+	-preferred position
+		*reduzir o número de preferred positions para apenas uma
+		*concentrar as posições em grupos maiores (Goalkeeper, Backward, Midfield and Forward)
+	-wage
+		*transformar a coluna wage em número
+3. Relações
+	- Value x Age
+		*correlation
+		*scatter plot
+	- Value x skills
+		*heatmap correlation
+		*scatter plot (utilizar o método do subplot)
+		*verificar qual ou quais habilidades mais interferem no valor atribuido ao jogador
+	- Value x overall
+		*scatter plot
+	- Value x evolution
+		*scatter plot
+	- Value x Preferred Position
+		*gráfico de colunas
+		*analisar qual posição é mais valorizada
+	- Value x Wage
+		*scatter plot
+4. Modelo (RandomForestRegressor)
+	- constante + beta1 * x1 (age) + beta2 * x2 (skills) + beta3 * x3 (overall)+ beta4 * x4 (evolution) + beta5 * x5 (preferred position) + beta6 * x6 (wage)
+
+
+
+
+
+
+
 
